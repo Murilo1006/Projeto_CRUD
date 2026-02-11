@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module" defer></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">Cadastro</h1>
+
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="nome" required>
+                <label for="nome">Nome</label>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" id="sobrenome" required>
+                <label for="sobrenome">Sobrenome</label>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" id="celular" required>
+                <label for="celular">Celular</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="cep" required>
+                <label for="cep">CEP</label>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" id="endereco" required>
+                <label for="endereco">Endereço</label>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" id="numero" required>
+                <label for="numero">Número</label>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" id="bairro" required>
+                <label for="bairro">Bairro</label>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" id="cidade" required>
+                <label for="cidade">Cidade</label>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" id="estado" required>
+                <label for="estado">Estado</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <button id="btnSalvar">Salvar</button>
+            <button id="btnLimpar">Limpar</button>
+        </div>
+
+        <hr class="divisor">
+
+        <h2 class="subtitle">Clientes Cadastrados</h2>
+
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="filtroNome">
+                <label for="filtroNome">Filtrar por nome</label>
+            </div>
+        </div>
+
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome Completo</th>
+                        <th>Celular</th>
+                        <th>Endereço Completo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaClientes"></tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        Murilo Gonçalves &#169 2026 🧑‍💻
+    </footer>
+</body>
+</html>
+
